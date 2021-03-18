@@ -1,4 +1,4 @@
-# Fulstack dApp Development
+# Fullstack dApp Development
 
 # Lecture 0
 
