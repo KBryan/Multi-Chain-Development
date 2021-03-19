@@ -47,12 +47,15 @@ import { ask, yesno, done } from '@reach-sh/stdlib/ask.mjs';
 
   const fmt = (x) => stdlib.formatCurrency(x, 4);
   const getBalance = async () => fmt(await stdlib.balanceOf(acc));
+  const getAccount = async () => acc.getAddress;
 
   const before = await getBalance();
+  const account = await getAccount();
   console.log(`Your balance is ${before}`);
+  console.log(`Your account address ${account}`);
 
   if (isAlice) {
-    console.log('Alice Stuff...');
+    console.log('Alice Stuff... Public Address ${acc}');
   } else {
     console.log('Do Bob Stuff');
   }
