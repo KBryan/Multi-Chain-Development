@@ -1,5 +1,33 @@
 # Scaffolding and Setup
 
+Let's make sure we have docker installed
+```
+  $ make --version
+  $ docker --version
+  $ docker-compose --version
+```
+
+Once you’ve confirmed that they are installed, choose a directory for this project. We recommend
+```
+  $ mkdir -p ~/reach/lecture_0 && cd ~/reach/lecture_0
+```
+Next, install Reach by downloading it from GitHub by running
+```
+  $ curl https://raw.githubusercontent.com/reach-sh/reach-lang/master/reach -o reach ; chmod +x reach
+```
+You’ll know that the download worked if you can run
+```
+  $ ./reach version
+```
+Since Reach is Dockerized, when you first use it, you’ll need to download the images it uses. This will happen automatically when you first use it, but you can do it manually now by running
+```
+  $ ./reach update
+```
+You’ll know that everything is in order if you can run
+```
+  $ ./reach compile --help
+```  
+  
 Let’s start by creating a file named index.rsh. It doesn’t matter where you put this file, but we recommend putting in the current directory, which would be ~/reach/tut if you’re following along exactly. In all the subsequent code samples, we’ll label the files based on the chapter of the tutorial you’re reading. For example, start off by typing the following into index.rsh:
 
 ```javascript
