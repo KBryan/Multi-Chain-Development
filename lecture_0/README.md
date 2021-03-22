@@ -119,12 +119,14 @@ import { ask, yesno, done } from '@reach-sh/stdlib/ask.mjs';
   done();
 })();
 ```
-# Adding the UI in React JS
-
--- TBD
 
 Follow the video
 
 [![](http://img.youtube.com/vi/OhwIbyhBcLQ/0.jpg)](http://www.youtube.com/watch?v=OhwIbyhBcLQ "FullStack Blockchain dApp Development == 0")
+
+# Adding the UI in React JS
+
+-- TBD
+
 
 
